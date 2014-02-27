@@ -14,3 +14,19 @@ directives.directive('stella', function(){
     link: applyStella
   };
 });
+
+directives.directive('flowtype', function(){
+  var applyFlowType = function(scope, element, attrs) {
+    $('body').flowtype({
+      minimum   : 500,
+      maximum   : 1200,
+      minFont   : 12,
+      maxFont   : 60
+    });
+  };
+
+  return {
+    restrict: 'E',
+    link: applyFlowType
+  };
+});
