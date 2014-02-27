@@ -1,0 +1,29 @@
+// Open Sans Font Face
+$OpenSansPath: "../bower_components/open-sans-fontface/fonts" !default;
+@import '../bower_components/open-sans-fontface/open-sans';
+
+// Bootstrap
+$font-family-sans-serif: 'Open Sans';
+@import '../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap';
+
+.container {
+  width: 100%;
+  padding: 0 0;
+}
+
+.header-section {
+  background-image: url(http://www.hdpaperwall.com/wp-content/uploads/2013/11/abstract-hd-wallpaper3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tagline {
+  font-size: 2em;
+  color: #ECF0F1;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+

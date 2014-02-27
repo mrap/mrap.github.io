@@ -15,8 +15,9 @@
   ],
   "dependencies": {
     "angular": "~1.2.13",
-    "bootstrap": "twbs/bootstrap#~3.1.1",
     "jquery.stellar": "~0.6.2",
-    "flowtype": "*"
+    "flowtype": "*",
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.1.1",
+    "open-sans-fontface": "~1.0.4"
   }
 }
