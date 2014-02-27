@@ -2,16 +2,25 @@
 <head>
   <meta charset="utf-8">
   <title>MRAP</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+  <!-- Parallax Background -->
+  <script>
+    $(function(){
+        $('.main-page').stellar({
+            horizontalScrolling: false,
+            verticalScrolling: true
+          });
+        });
+  </script>
 </head>
-<body>
+<body class="main-page" data-stellar-background-ratio="0.5">
   <div class="container">
-    <div ng-include src="'partials/header.html'">
-    </div>
-    <div ng-include src="'partials/portfolio.html'">
-    </div>
-    <div ng-include src="'partials/contact.html'">
-    </div>
+    <div ng-include src="'partials/header.html'"></div>
+    <div ng-include src="'partials/portfolio.html'"></div>
+    <div ng-include src="'partials/contact.html'"></div>
   </div>
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/app.js"></script>
