@@ -1,5 +1,7 @@
 
 var app = angular.module('mrap', [
-  'mrap.controllers'
+  'mrap.controllers',
+  'mrap.directives'
 ]);
+
 
