@@ -6,12 +6,46 @@ $OpenSansPath: "../bower_components/open-sans-fontface/fonts" !default;
 $font-family-sans-serif: 'Open Sans';
 @import '../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap';
 
-.container {
+$max-navigation-height: 30%;
+$min-navigation-height: 44px;
+$animation-duration: 0.5s;
+
+.top-container {
   width: 100%;
   padding: 0 0;
 }
 
+.inner-container {
+  @extend .container;
+}
+
+.navigation {
+  position: absolute;
+  min-height: $min-navigation-height;
+  max-height: $max-navigation-height;
+  top: 50%;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  -webkit-transition: background-color $animation-duration;
+  -moz-transition: background-color $animation-duration;
+  -o-transition: background-color $animation-duration;
+  transition: background-color $animation-duration;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    background-color: #34495E;
+  }
+
+  .content {
+    padding-left: 20px;
+    color: #ECF0F1;
+  }
+}
+
 .header-section {
+  top: 50%;
   background-image: url(http://www.hdpaperwall.com/wp-content/uploads/2013/11/abstract-hd-wallpaper3.jpg);
   background-repeat: no-repeat;
   background-position: center center;

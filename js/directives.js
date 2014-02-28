@@ -30,3 +30,40 @@ directives.directive('flowtype', function(){
     link: applyFlowType
   };
 });
+
+directives.directive('mrapNavigation', function(){
+  var applyStickyNavigation = function(scope, element, attrs) {
+    $(document).ready(function(){
+      var navBarY = function(){
+        // Vertical middle of the window
+        return $('.navigation').offset().top;
+      };
+
+      var navOriginY = navBarY();
+
+      // Resize Navigation
+      var resizeNavigation = function() {
+        var bodyWidth = $(window).width();
+        var newNavHeight = bodyWidth * 0.20; // 20%
+        $('.navigation').height(newNavHeight);
+      };
+      $(window).bind('resize', resizeNavigation);
+
+      // Sticky Navigation
+      var stickNavigation = function(scope, element, attributes) {
+        if ($(window).scrollTop() >= navOriginY) {
+          $('.navigation').addClass('fixed');
+        } else {
+          $('.navigation').removeClass('fixed');
+        }
+      };
+      $(window).bind('scroll', stickNavigation);
+
+    });
+  };
+
+  return {
+    restrict: 'A',
+    link: applyStickyNavigation
+  };
+});

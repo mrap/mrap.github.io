@@ -1,6 +1,8 @@
 <html lang="en" ng-app="mrap" >
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>MRAP</title>
   <link rel="stylesheet" href="stylesheets/main.css">
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -8,11 +10,15 @@
   <script src="bower_components/flowtype/flowtype.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div ng-include src="'partials/header.html'"></div>
-    <div ng-include src="'partials/portfolio.html'"></div>
-    <div ng-include src="'partials/contact.html'"></div>
+  <div class="top-container">
+    <div ng-include src="'partials/navigation.html'"></div>
+    <div class="inner-container">
+      <div ng-include src="'partials/header.html'"></div>
+      <div ng-include src="'partials/portfolio.html'"></div>
+      <div ng-include src="'partials/contact.html'"></div>
+    </div>
   </div>
+  <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
