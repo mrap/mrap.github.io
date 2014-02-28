@@ -1,27 +1,31 @@
 
 var directives = angular.module('mrap.directives', []);
 
-directives.directive('stella', function(){
-  var applyStella = function(scope, element, attrs) {
-    $(window).stellar({
-      horizontalScrolling: false,
-      verticalScrolling: true
+directives.directive('stellar', function(){
+  var applyStellar = function(scope, element, attrs) {
+    $(document).ready(function(){
+      $(window).stellar({
+        horizontalScrolling: false,
+        verticalScrolling: true
+      });
     });
   };
 
   return {
     restrict: 'A',
-    link: applyStella
+    link: applyStellar
   };
 });
 
 directives.directive('flowtype', function(){
   var applyFlowType = function(scope, element, attrs) {
-    $('body').flowtype({
-      minimum   : 500,
-      maximum   : 1200,
-      minFont   : 12,
-      maxFont   : 60
+    $(document).ready(function(){
+      $('body').flowtype({
+        minimum   : 500,
+        maximum   : 1200,
+        minFont   : 12,
+        maxFont   : 60
+      });
     });
   };
 
