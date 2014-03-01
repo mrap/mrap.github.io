@@ -5148,7 +5148,7 @@ button.close {
     display: none !important; } }
 .outside-wrapper {
   height: 100%;
-  background-image: url(http://static.hdw.eweb4.com/media/wallpapers_1920x1080/photography/1/1/blurred-city-lights-photography-hd-wallpaper-1920x1080-9111.jpg);
+  background-image: url(https://mrap-blog.s3.amazonaws.com/mrap_bg_50.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
