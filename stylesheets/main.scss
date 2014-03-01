@@ -15,8 +15,10 @@ $OpenSansPath: "../bower_components/open-sans-fontface/fonts" !default;
 // Bootstrap
 $font-family-sans-serif: 'Open Sans';
 $text-color: $text-color-white;
-$btn-primary-bg: rgb(255, 255, 255);
-$btn-primary-bg: rgba(255, 255, 255, 0.2);
+$btn-default-bg: rgb(0, 0, 0);
+$btn-default-bg: rgba(0, 0, 0, 0.5);
+$btn-primary-bg: rgb(48, 133, 99);
+$btn-primary-bg: rgba(48, 133, 99, 0.7);
 // Forms
 $input-border-color: $color-dark-blue;
 $input-color-placeholder: $color-light-gray;
@@ -52,7 +54,7 @@ body {
   position: absolute;
   min-height: $min-navigation-height;
   max-height: $max-navigation-height;
-  top: 50%;
+  top: 40%;
   width: 100%;
   z-index: 9999;
   background-color: transparent;
@@ -68,6 +70,7 @@ body {
   }
 
   .content {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     padding-left: $padding-left;
     color: $text-color-white;
   }
@@ -94,4 +97,23 @@ body {
 textarea {
   resize: none;
 }
+
+.social-section {
+
+  margin-top: 10%;
+
+  .social-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .social-btn {
+    @extend .btn;
+    background-color: $btn-default-bg;
+    border-color: rgb(189, 195, 199);
+    border-color: rgba(189, 195, 199, 0.5);
+    color: $color-light-gray;
+  }
+}
+
 
