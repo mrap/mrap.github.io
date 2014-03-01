@@ -15,6 +15,8 @@ $OpenSansPath: "../bower_components/open-sans-fontface/fonts" !default;
 // Bootstrap
 $font-family-sans-serif: 'Open Sans';
 $text-color: $text-color-white;
+$btn-primary-bg: rgb(255, 255, 255);
+$btn-primary-bg: rgba(255, 255, 255, 0.2);
 // Forms
 $input-border-color: $color-dark-blue;
 $input-color-placeholder: $color-light-gray;
@@ -23,7 +25,12 @@ $input-bg: rgb(255, 255, 255);
 $input-bg: rgba(255, 255, 255, 0.2);
 @import '../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap';
 
+body {
+  // Temporary for simple page.
+  overflow: hidden;
+}
 .outside-wrapper {
+  height: 100%;
   background-image: $bg-image;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,6 +71,18 @@ $input-bg: rgba(255, 255, 255, 0.2);
     padding-left: $padding-left;
     color: $text-color-white;
   }
+  
+  .hello-btn {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-lg;
+    margin-top: 5%;
+    display: block;
+  }
+}
+
+.header-section {
+  text-align: center;
 }
 
 .tagline {
