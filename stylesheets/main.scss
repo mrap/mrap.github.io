@@ -62,7 +62,7 @@ $input-bg: rgba(255, 255, 255, 0.2);
   @extend .vertical-center;
 
   .content {
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.6),
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.9),
     0px 4px 13px rgba(0,0,0,0.1);
     color: $text-color-white;
   }
@@ -71,10 +71,32 @@ $input-bg: rgba(255, 255, 255, 0.2);
     @extend .btn;
     @extend .btn-primary;
     @extend .btn-lg;
-    margin-top: 5%;
-    max-width: 50%;
+    margin-top: 50px;
+    width: 50%;
+    max-width: 300px;
     display: block;
   }
+}
+
+.name {
+  font-family: "ff-dagny-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.description {
+  font-family: "jaf-facitweb",sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.languages {
+  font-family: "source-code-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8em;
 }
 
 .navigation {
@@ -118,7 +140,7 @@ textarea {
 }
 
 .social-section {
-  margin-top: 5%;
+  margin-top: 20px;
 
   .social-btn {
     @extend .btn;
