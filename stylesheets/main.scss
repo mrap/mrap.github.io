@@ -148,6 +148,14 @@ textarea {
     border-color: rgb(189, 195, 199);
     border-color: rgba(189, 195, 199, 0.5);
     color: $color-light-gray;
+
+    &:active {
+      color: $text-color-white;
+    }
+    
+    &:hover {
+      color: $text-color-white;
+    }
   }
 }
 
