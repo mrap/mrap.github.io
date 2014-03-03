@@ -2,9 +2,12 @@
 
 .section {
   background-color: white;
-  padding: 10%;
   width: 100%;
   display: block;
+
+  .content {
+    padding: 10%;
+  }
 }
 
 h2 {
