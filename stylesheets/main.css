@@ -1,21 +1,21 @@
-body {
-  font-size: 18px; }
-
-h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.45; }
-
-h1 {
-  font-size: 3em; }
-
-.brand {
+.brand-font, h1, h2, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
   font-style: normal;
   font-weight: 700; }
 
-.main-body {
+body {
+  font-size: 18px; }
+
+h1, h2 {
+  line-height: 1.45; }
+
+p {
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
   font-weight: 100; }
+
+h1 {
+  font-size: 3em; }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -5072,28 +5072,28 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  font-size: 18px; }
-
-h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.45; }
-
-h1 {
-  font-size: 3em; }
-
-.brand {
+.brand-font, h1, h2, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
   font-style: normal;
   font-weight: 700; }
 
-.main-body {
+body {
+  font-size: 18px; }
+
+h1, h2 {
+  line-height: 1.45; }
+
+p {
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
   font-weight: 100; }
 
+h1 {
+  font-size: 3em; }
+
 .header-section {
-  position: absolute;
   text-align: center;
+  margin-top: -20;
   height: 100%;
   width: 100%;
   background-image: url(https://mrap-blog.s3.amazonaws.com/mrap_bg_50.jpg);
@@ -5114,29 +5114,60 @@ h1 {
     display: block;
     color: #ecf0f1; }
 
-body {
-  font-size: 18px; }
-
-h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.45; }
-
-h1 {
-  font-size: 3em; }
-
-.brand {
+.brand-font, h1, h2, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
   font-style: normal;
   font-weight: 700; }
 
-.main-body {
+body {
+  font-size: 18px; }
+
+h1, h2 {
+  line-height: 1.45; }
+
+p {
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
   font-weight: 100; }
 
-.container {
-  margin: 0;
-  padding: 0;
-  width: 100%; }
+h1 {
+  font-size: 3em; }
+
+.brand-font, h1, h2, .brand {
+  font-family: "ff-tisa-sans-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+body {
+  font-size: 18px; }
+
+h1, h2 {
+  line-height: 1.45; }
+
+p {
+  font-family: "ff-basic-gothic-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 100; }
+
+h1 {
+  font-size: 3em; }
+
+.section {
+  background-color: white;
+  padding: 10%;
+  width: 100%;
+  display: block; }
+
+h2 {
+  color: #34495E;
+  text-align: center; }
+
+p {
+  color: #7F8C8D;
+  text-align: center;
+  font-family: "ff-basic-gothic-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 100; }
 
 .single-page .content {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9), 0px 4px 13px rgba(0, 0, 0, 0.1);

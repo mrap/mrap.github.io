@@ -22,11 +22,8 @@ directives.directive('stellar', function(){
 directives.directive('flowtype', function(){
   var applyFlowType = function(scope, element, attrs) {
     $(document).ready(function(){
-      $('.under-header').flowtype({
-        minimum   : 500,
-        maximum   : 1200,
-        minFont   : 12,
-        maxFont   : 60
+      $('.container').flowtype({
+        minFont   : 12
       });
     });
   };
