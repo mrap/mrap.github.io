@@ -1,5 +1,7 @@
 
-var directives = angular.module('mrap.directives', []);
+var directives = angular.module('mrap.directives', [
+  'ngFitText'
+]);
 
 directives.directive('stellar', function(){
   var applyStellar = function(scope, element, attrs) {
@@ -20,7 +22,7 @@ directives.directive('stellar', function(){
 directives.directive('flowtype', function(){
   var applyFlowType = function(scope, element, attrs) {
     $(document).ready(function(){
-      $('body').flowtype({
+      $('.under-header').flowtype({
         minimum   : 500,
         maximum   : 1200,
         minFont   : 12,

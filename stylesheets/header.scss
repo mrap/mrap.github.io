@@ -1,0 +1,27 @@
+@import 'vars';
+
+.header-section {
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  .tagline {
+    position: relative;
+    top: 50%;
+    font-family: "museo-sans",sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-transform: uppercase;
+    display: block;
+    color: $text-color-white;
+  }
+}
