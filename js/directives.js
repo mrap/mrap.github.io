@@ -48,7 +48,7 @@ directives.directive('flowtype', function(){
   var applyFlowType = function(scope, element, attrs) {
     $(document).ready(function(){
       $('.container').flowtype({
-        minFont   : 12
+        minFont   : 14
       });
     });
   };
