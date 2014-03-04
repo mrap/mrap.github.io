@@ -71,3 +71,17 @@ directives.directive('mrapNavigation', function(){
     link: applyStickyNavigation
   };
 });
+
+directives.directive('skillbarPercent', function(){
+  var applySkillbarPercent = function(scope, element, attrs) {
+    $(document).ready(function(){
+      var newPercentage = attrs.skillbarPercent + "%";
+      $('.skillbar-active').css({ "width":newPercentage });
+    });
+  };
+
+  return {
+    restrict: 'A',
+    link: applySkillbarPercent
+  };
+});

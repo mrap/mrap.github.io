@@ -1,25 +1,19 @@
 @import 'vars';
 
 .section {
-  background-color: white;
+  background-color: #ECF0F1;
   width: 100%;
   display: block;
 
   .content {
-    padding: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 h2 {
-  color: #34495E;
   text-align: center;
-}
-
-p {
-  color: #7F8C8D;
-  text-align: center;
-  font-family: "ff-basic-gothic-web-pro",sans-serif;
-  font-style: normal;
-  font-weight: 100;
 }
 

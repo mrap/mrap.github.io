@@ -1,0 +1,13 @@
+<h4>Fluency</h4>
+<div class="skills-group languages" ng-controller="LanguagesCtrl">
+  <div class="language" ng-repeat="language in languages">
+    <div class="row">
+      <span class="skill-name">{{language.name}}</span>
+    </div>
+    <div class="row">
+      <div class="skillbar-inactive">
+        <div class="skillbar-active" style="width: {{language.level}};"></div>
+      </div>
+    </div>
+  </div>
+</div>
