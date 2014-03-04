@@ -1,8 +1,9 @@
 <div ng-controller="PortfolioCtrl">
-  <div ng-repeat="sample in workSamples" class="row">
-    <div class="col-xs-8">
-      {{ sample.name }}
-      {{ sample.link }}
-    </div>
+  <div ng-repeat="sample in workSamples">
+    <a href="{{sample.link}}">
+      <div class="work-sample" style="background-image: url({{sample.photoUrl}});" >
+        <h2 class="work-name">{{ sample.name }}</h2>
+      </div>
+    </a>
   </div>
 </div>
