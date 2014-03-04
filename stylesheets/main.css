@@ -5063,8 +5063,8 @@ h1 {
   font-size: 3em; }
 
 .header-section {
+  position: relative;
   text-align: center;
-  margin-top: -20;
   height: 100%;
   background-image: url(https://mrap-blog.s3.amazonaws.com/mrap_bg_50.jpg);
   background-repeat: no-repeat;
@@ -5073,16 +5073,17 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover; }
   .header-section .tagline {
-    position: relative;
+    position: absolute;
+    width: 100%;
     top: 50%;
     font-family: "museo-sans",sans-serif;
     font-style: normal;
     font-weight: 100;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-transform: uppercase;
-    display: block;
-    color: #ecf0f1; }
+    color: #ecf0f1;
+    text-transform: uppercase; }
+  .header-section .fa {
+    position: absolute;
+    bottom: 10px; }
 
 .brand-font, h1, h2, h3, h4, h5, h6, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
@@ -5128,7 +5129,7 @@ h1 {
 
 .section {
   background-color: #ECF0F1;
-  display: block; }
+  width: 100%; }
   .section .content {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -5282,7 +5283,8 @@ h1 {
 .container {
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 textarea {
   resize: none; }
