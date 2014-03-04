@@ -5,12 +5,17 @@
   padding-right: 10px;
   padding-left: 10px;
 
+  .skill {
+    margin-bottom: 20px;
+  }
+
   .skill-name {
     color: #7F8C8D;
     font-family: "ff-tisa-sans-web-pro",sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    text-transform: uppercase;
   }
 }
 
@@ -34,10 +39,6 @@
 .languages {
   .skillbar-inactive {
     height: 20px;
-  }
-
-  .skill-name {
-    font-size: 1.2em;
   }
 }
 

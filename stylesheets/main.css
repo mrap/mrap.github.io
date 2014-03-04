@@ -14,7 +14,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5090,7 +5090,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5139,7 +5139,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5172,7 +5172,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5188,6 +5188,11 @@ h1 {
 
 h2 {
   text-align: center; }
+
+.subheader {
+  text-align: center;
+  font-size: 0.7em;
+  text-transform: uppercase; }
 
 .brand-font, h1, h2, h3, h4, h5, h6, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
@@ -5205,7 +5210,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5237,7 +5242,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5245,12 +5250,15 @@ h1 {
 .skills-group {
   padding-right: 10px;
   padding-left: 10px; }
+  .skills-group .skill {
+    margin-bottom: 20px; }
   .skills-group .skill-name {
     color: #7F8C8D;
     font-family: "ff-tisa-sans-web-pro",sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.8em; }
+    font-size: 0.7em;
+    text-transform: uppercase; }
 
 .skillbar-inactive {
   width: 100%;
@@ -5268,8 +5276,6 @@ h1 {
 
 .languages .skillbar-inactive {
   height: 20px; }
-.languages .skill-name {
-  font-size: 1.2em; }
 
 .brand-font, h1, h2, h3, h4, h5, h6, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
@@ -5287,7 +5293,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
@@ -5348,7 +5354,7 @@ p {
   color: #7F8C8D;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h1 {
   font-size: 3em; }
