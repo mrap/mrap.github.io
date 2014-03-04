@@ -12,8 +12,8 @@
 <body>
   <div ng-include src="'partials/navigation.html'"></div>
   <div class="container">
-    <div ng-include src="'partials/header.html'"></div>
-    <div class="section" ng-include src="'partials/who-am-i.html'"></div>
+    <div id="top" ng-include src="'partials/header.html'"></div>
+    <div class="section" id="who-am-i" ng-include src="'partials/who-am-i.html'"></div>
     <div class="section" ng-include src="'partials/skills.html'"></div>
     <div class="section" ng-include src="'partials/quote.html'" ></div>
     <div class="section" ng-include src="'partials/portfolio.html'"></div>
@@ -28,6 +28,7 @@
   <script src="js/controllers.js"></script>
   <script src="js/directives.js"></script>
   <script src="bower_components/ng-FitText.js/ng-FitText.js"></script>
+  <script src="js/angular-smooth-scroll/angular-smooth-scroll-1.6.0.js"></script>
   <flowtype></flowtype>
 </body>
 </html>

@@ -5064,7 +5064,6 @@ h1 {
 
 .header-section {
   position: relative;
-  text-align: center;
   height: 100%;
   background-image: url(https://mrap-blog.s3.amazonaws.com/mrap_bg_50.jpg);
   background-repeat: no-repeat;
@@ -5075,6 +5074,7 @@ h1 {
   .header-section .tagline {
     position: absolute;
     width: 100%;
+    text-align: center;
     top: 50%;
     font-family: "museo-sans",sans-serif;
     font-style: normal;
@@ -5082,8 +5082,13 @@ h1 {
     color: #ecf0f1;
     text-transform: uppercase; }
   .header-section .fa {
+    width: 100%;
     position: absolute;
-    bottom: 10px; }
+    text-align: center;
+    bottom: 15%;
+    color: #ecf0f1; }
+    .header-section .fa:hover {
+      color: #3498DB; }
 
 .brand-font, h1, h2, h3, h4, h5, h6, .brand {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
