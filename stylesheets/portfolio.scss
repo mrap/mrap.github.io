@@ -23,20 +23,24 @@
   .work-info {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.8);
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .work-name {
     text-align: left;
     padding-left: 20px;
-    font-size: 3.0em;
+    font-size: 2.0em;
     color: $text-color-white;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-    0px 8px 13px rgba(0,0,0,0.1),
-    0px 18px 23px rgba(0,0,0,0.1);
+    font-family: "museo-sans",sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
   .work-description {
     color: $text-color-white;
+    padding-left: 20px;
+    padding-right: 40px;
   }
 }
 
