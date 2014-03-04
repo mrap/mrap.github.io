@@ -5367,7 +5367,7 @@ h1 {
     height: 200px; }
   .contact .hello-btn {
     text-align: center;
-    width: 50%;
+    min-width: 50%;
     max-width: 300px; }
   .contact .prompt {
     color: #ecf0f1;
