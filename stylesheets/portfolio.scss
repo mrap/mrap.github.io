@@ -3,8 +3,13 @@
 
 .work-sample {
   position: relative;
-  height: 500px;
-  background-position: center;
+  background-color: rgb(25, 25, 26);
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   // Makes the entire div clickable
   a {
@@ -21,15 +26,14 @@
   }
 
   .work-info {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgb(25, 25, 26);
     padding-top: 10px;
     padding-bottom: 20px;
+    padding-left: 40px;
   }
 
   .work-name {
     text-align: left;
-    padding-left: 20px;
     font-size: 2.0em;
     color: $text-color-white;
     font-family: "museo-sans",sans-serif;
@@ -38,8 +42,8 @@
   }
 
   .work-description {
+    text-align: left;
     color: $text-color-white;
-    padding-left: 20px;
     padding-right: 40px;
   }
 }
