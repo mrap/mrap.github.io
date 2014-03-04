@@ -1,2 +1,17 @@
 @import 'vars';
 
+.navbar {
+  text-transform: uppercase;
+  li {
+    font-size: 0.7em;
+    font-family: "museo-sans",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .navbar-brand {
+    font-family: "jaf-facitweb",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+}

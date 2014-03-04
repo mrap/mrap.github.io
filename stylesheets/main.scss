@@ -7,9 +7,7 @@ $btn-default-bg: rgb(0, 0, 0);
 $btn-default-bg: rgba(0, 0, 0, 0.5);
 $btn-primary-bg: rgb(48, 133, 99);
 $btn-primary-bg: rgba(48, 133, 99, 0.7);
-$navbar-default-bg: rgb(0, 0, 0);
-$navbar-default-bg: rgba(0, 0, 0, 0.0);
-$navbar-default-link-color: #BDC3C7;
+$navbar-default-bg: $text-color-white;
 // Forms
 $input-border-color: $color-dark-blue;
 $input-color-placeholder: $color-light-gray;
