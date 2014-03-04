@@ -25,6 +25,7 @@ controllers.controller('PortfolioCtrl', function($scope){
   $scope.workSamples.push(
     {
       name: "Spot",
+      description: "Helping each other see what places look right now.",
       link: "https://itunes.apple.com/us/app/spot-places-right-now/id820068868?ls=1&mt=8",
       photoUrl: "http://25.media.tumblr.com/11efc3686d380f349dbf5a75583ba30a/tumblr_mzmpn2UExS1sp583mo1_1280.jpg"
     }
@@ -32,6 +33,7 @@ controllers.controller('PortfolioCtrl', function($scope){
   $scope.workSamples.push(
     {
       name: "Battery Hero",
+      description: "Keep your mac's battery healthy.",
       link: "https://itunes.apple.com/us/app/battery-hero/id782015477?mt=12",
       photoUrl: "https://mrap-blog.s3.amazonaws.com/battery-hero-screenshot-tint.jpg"
     }
@@ -39,6 +41,7 @@ controllers.controller('PortfolioCtrl', function($scope){
   $scope.workSamples.push(
     {
       name: "Sunriser",
+      description: "Waking up early was never this easy.",
       link: "https://itunes.apple.com/de/app/sunriser/id684789140?l=en&mt=8",
       photoUrl: "https://mrap-blog.s3.amazonaws.com/sunriser-screenshot.jpg"
     }
@@ -46,6 +49,7 @@ controllers.controller('PortfolioCtrl', function($scope){
   $scope.workSamples.push(
     {
       name: "Coffeeshop",
+      description: "A place to be productive with others (open source project)",
       link: "http://doingnow.herokuapp.com/",
       photoUrl: "https://mrap-blog.s3.amazonaws.com/coffeeshop-tint.jpg"
     }
