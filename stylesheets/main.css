@@ -5416,7 +5416,12 @@ h1 {
   font-size: 0.8em;
   color: #bdc3c7; }
 .resume .title-change {
-  margin-top: 50px; }
+  margin-top: 50px;
+  opacity: 0;
+  transition: opacity 0.5s 0s ease-in;
+  -webkit-transition: opacity 0.5s 0s ease-in;
+  -moz-transition: opacity 0.5s 0s ease-in;
+  -o-transition: opacity 0.5s 0s ease-in; }
 .resume .prev-title {
   color: #bdc3c7;
   font-family: "ff-dagny-web-pro",sans-serif;
@@ -5427,6 +5432,8 @@ h1 {
   font-family: "ff-dagny-web-pro",sans-serif;
   font-style: normal;
   font-weight: 700; }
+.resume .reveal {
+  opacity: 1; }
 
 .container {
   width: 100%;

@@ -36,6 +36,13 @@
 
   .title-change {
     margin-top: 50px;
+
+    // Will be faded in
+    opacity: 0;
+    transition: opacity 0.5s 0s ease-in;
+    -webkit-transition: opacity 0.5s 0s ease-in;
+    -moz-transition: opacity 0.5s 0s ease-in;
+    -o-transition: opacity 0.5s 0s ease-in;
   }
 
   .prev-title {
@@ -50,5 +57,9 @@
     font-family: "ff-dagny-web-pro",sans-serif;
     font-style: normal;
     font-weight: 700;
+  }
+
+  .reveal {
+    opacity: 1;
   }
 }

@@ -109,3 +109,23 @@ directives.directive('skillbarPercent', function(){
     link: applySkillbarPercent
   };
 });
+
+directives.directive('revealable', function($window){
+  var applyFadeInOnScroll = function(scope, element, attrs) {
+    angular.element($window).bind("scroll", function() {
+      var elementPosition = element[0].offsetTop;
+      if (this.pageYOffset >= elementPosition) {
+        scope.shouldReveal = true;
+      } else {
+        scope.shouldReveal = false;
+      }
+      scope.$apply();
+    });
+  };
+
+  return {
+    restrict: 'A',
+    link: applyFadeInOnScroll
+  }
+});
+
