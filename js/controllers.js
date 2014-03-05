@@ -55,3 +55,28 @@ controllers.controller('PortfolioCtrl', function($scope){
     }
   );
 });
+
+controllers.controller('ResumeCtrl', function($scope){
+  $scope.stories = [];
+  $scope.stories.push({chapter: "Leaves film school to build his career from scratch.", 
+                      prevTitle: "Student Filmmaker",
+                      nextTitle: "Freelance Filmmaker"});
+  $scope.stories.push({chapter: "While assembling his portfolio, he discovers unsolved problems.  Decides to change the world.", 
+                      prevTitle: "Freelance Filmmaker",
+                      nextTitle: "Idealistic Entrepreneur"});
+  $scope.stories.push({chapter: "Starts a software company and launches a social network as a \"non-technical cofounder\". Immediately fails because the app sucked (among other things).", 
+                      prevTitle: "Idealistic Entrepreneur",
+                      nextTitle: "Real Entrepreneur"});
+  $scope.stories.push({chapter: "Post-launch, codes a better version of the app. Leaves startup to detach from a greedy cofounder. Discovers his true passion: programming and building great products.", 
+                      prevTitle: "Real Entrepreneur",
+                      nextTitle: "Programming Noob"});
+  $scope.stories.push({chapter: "Learns Objective-C, Ruby (rails), Java in 5 months. He's obsessed with learning and building. Launches a mac app.", 
+                      prevTitle: "Programming Noob",
+                      nextTitle: "Code Addict"});
+  $scope.stories.push({chapter: "Accelerates his learning: masters VIM, TDD/BDD. Writes DRY, clean, and concise code. Starts to collaborate with others. Launches: another mac app, two iOS apps, open-sourced realtime web app project, fullstack (REST API server to iPhone client).  Competes in two hackathons (wins in one).", 
+                      prevTitle: "Code Addict",
+                      nextTitle: "Code Ninja"});
+  $scope.stories.push({chapter: "Works at Google. Builds world-class products alongside other passionate individuals.", 
+                      prevTitle: "Code Ninja",
+                      nextTitle: "?"});
+});

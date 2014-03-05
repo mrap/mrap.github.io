@@ -5372,6 +5372,36 @@ h1 {
     color: #ecf0f1;
     font-size: 30px; }
 
+.brand-font, h1, h2, h3, h4, h5, h6, .brand {
+  font-family: "ff-tisa-sans-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+body {
+  font-size: 18px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #34495E;
+  line-height: 1.45; }
+
+p {
+  color: #34495E;
+  font-family: "ff-basic-gothic-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 200; }
+
+h1 {
+  font-size: 3em; }
+
+.resume .section {
+  margin-bottom: 20px; }
+.resume h1 {
+  font-size: 1.5em;
+  text-align: left; }
+.resume p {
+  font-size: 2em;
+  color: #7f8c8d; }
+
 .container {
   width: 100%;
   padding: 0;

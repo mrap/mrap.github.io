@@ -1,0 +1,45 @@
+<html lang="en" ng-app="mrap" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>MRAP</title>
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/glp7kfk.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+  <div ng-include src="'partials/navigation.html'"></div>
+  <div class="container">
+    <div class="resume" ng-controller="ResumeCtrl">
+
+      <div class="section" ng-repeat="story in stories">
+        <div class="content">
+          <h1>{{ story.chapter }}</h1>
+          <p data-fittext="3" data-fittext-max="75">
+          {{story.prevTitle}}  <i class="fa fa-long-arrow-right"></i>  {{story.nextTitle}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+  <script src="bower_components/flowtype/flowtype.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js"></script>
+  <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+  <!-- Angular -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="bower_components/ng-FitText.js/ng-FitText.js"></script>
+  <script src="js/angular-smooth-scroll/angular-smooth-scroll-1.6.0.js"></script>
+  <flowtype></flowtype>
+</body>
+</html>
