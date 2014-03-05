@@ -5405,6 +5405,14 @@ h1 {
   text-align: center;
   color: black;
   margin-top: 50px; }
+  .resume .controls p {
+    color: #7f8c8d; }
+.resume .story {
+  opacity: 0;
+  transition: all 0.5s 0s ease-in;
+  -webkit-transition: all 0.5s 0s ease-in;
+  -moz-transition: opacity 0.5s 0s ease-in;
+  -o-transition: opacity 0.5s 0s ease-in; }
 .resume h1 {
   font-size: 1.2em;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
@@ -5416,19 +5424,15 @@ h1 {
   font-size: 0.8em;
   color: #bdc3c7; }
 .resume .title-change {
-  margin-top: 50px;
-  opacity: 0;
-  transition: opacity 0.5s 0s ease-in;
-  -webkit-transition: opacity 0.5s 0s ease-in;
-  -moz-transition: opacity 0.5s 0s ease-in;
-  -o-transition: opacity 0.5s 0s ease-in; }
+  text-align: center;
+  margin-bottom: 40px; }
 .resume .prev-title {
   color: #bdc3c7;
   font-family: "ff-dagny-web-pro",sans-serif;
   font-style: normal;
   font-weight: 400; }
 .resume .next-title {
-  color: #2ECC71;
+  color: #27AE60;
   font-family: "ff-dagny-web-pro",sans-serif;
   font-style: normal;
   font-weight: 700; }
