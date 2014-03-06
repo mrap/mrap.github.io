@@ -63,12 +63,12 @@ controllers.controller('ResumeCtrl', function($scope){
                       nextTitle: "Freelance Filmmaker"});
   $scope.stories.push({chapter: "While assembling his portfolio, he discovers unsolved problems.  Decides to change the world.", 
                       prevTitle: "Freelance Filmmaker",
-                      nextTitle: "Idealistic Entrepreneur"});
+                      nextTitle: "Romantic Entrepreneur"});
   $scope.stories.push({chapter: "Starts a software company and launches a social network as a \"non-technical cofounder\". Immediately fails because the app sucked (among other things).", 
-                      prevTitle: "Idealistic Entrepreneur",
-                      nextTitle: "Real Entrepreneur"});
+                      prevTitle: "Romantic Entrepreneur",
+                      nextTitle: "Actual Entrepreneur"});
   $scope.stories.push({chapter: "Post-launch, codes a better version of the app. Leaves startup to detach from a greedy cofounder. Discovers his true passion: programming and building great products.", 
-                      prevTitle: "Real Entrepreneur",
+                      prevTitle: "Actual Entrepreneur",
                       nextTitle: "Programming Noob"});
   $scope.stories.push({chapter: "Learns Objective-C, Ruby (rails), Java in 5 months. He's obsessed with learning and building. Launches a mac app.", 
                       prevTitle: "Programming Noob",
