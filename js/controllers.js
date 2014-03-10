@@ -78,8 +78,8 @@ controllers.controller('ResumeCtrl', function($scope){
                       nextTitle: "Code Ninja"});
   $scope.stories.push({chapter: " Deploys products with increasing frequency including another Mac app, two iOS apps, open-sourced realtime web app project, fullstack (REST API server to iPhone client), a speed-reading AngularJS web app.", 
                       prevTitle: "Code Ninja",
-                      nextTitle: "Fearless Code Ninja"});
+                      nextTitle: "Code Assassin"});
   $scope.stories.push({chapter: "Builds world-class products alongside other passionate individuals.", 
-                      prevTitle: "Fearless Code Ninja",
+                      prevTitle: "Code Assassin",
                       nextTitle: "?"});
 });
