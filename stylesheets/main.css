@@ -5402,42 +5402,45 @@ h1 {
   vertical-align: middle; }
 .resume .controls {
   width: 100%;
-  text-align: center;
   color: black;
-  margin-top: 50px;
+  margin-top: 10px;
   opacity: 0;
   transition: opacity 0.5s 0.5s ease-in;
   -webkit-transition: opacity 0.5s 0.5s ease-in;
   -moz-transition: opacity 0.5s 0.5s ease-in;
   -o-transition: opacity 0.5s 0.5s ease-in; }
-  .resume .controls p {
-    color: #7f8c8d; }
+  .resume .controls .continue {
+    font-family: "ff-basic-gothic-web-pro",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.6em;
+    background-color: #2aa198;
+    position: absolute;
+    right: 10%;
+    bottom: 10px; }
 .resume h1 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: "ff-basic-gothic-web-pro",sans-serif;
   font-style: normal;
   font-weight: 200;
   text-align: left;
-  margin-bottom: 50px; }
-.resume p {
+  margin-bottom: 20px; }
+.resume .title-change {
   text-transform: uppercase;
   font-size: 0.8em;
   color: #bdc3c7; }
-.resume .title-change {
-  margin-top: 40px;
-  font-size: 1em;
-  text-align: center; }
 .resume .prev-title {
   text-decoration: line-through;
-  color: #bdc3c7;
   font-family: "ff-dagny-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #cb4b16; }
 .resume .next-title {
-  color: #27AE60;
+  color: #268bd2;
   font-family: "ff-dagny-web-pro",sans-serif;
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.5em; }
 .resume .reveal {
   opacity: 1; }
 

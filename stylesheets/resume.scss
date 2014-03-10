@@ -16,9 +16,8 @@
 
   .controls {
     width: 100%;
-    text-align: center;
     color: black;
-    margin-top: 50px;
+    margin-top: 10px;
     // Will be faded in
     opacity: 0;
     transition: opacity 0.5s 0.5s ease-in;
@@ -26,46 +25,49 @@
     -moz-transition: opacity 0.5s 0.5s ease-in;
     -o-transition: opacity 0.5s 0.5s ease-in;
 
-
-    p {
-      color: $color-dark-grey;
+    .continue {
+      font-family: "ff-basic-gothic-web-pro",sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 0.6em;
+      background-color: rgb(42,161,152);
+      position: absolute;
+      right: 10%;
+      bottom: 10px;
     }
   }
 
   h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: "ff-basic-gothic-web-pro",sans-serif;
     font-style: normal;
     font-weight: 200;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    // color: rgb(236,240,241);
+    // color: rgb(101,123,131);
   }
 
-  p {
+  .title-change {
     text-transform: uppercase;
     font-size: 0.8em;
     color: $color-light-gray;
   }
 
-  .title-change {
-    margin-top: 40px;
-    font-size: 1em;
-    text-align: center;
-  }
-
   .prev-title {
     text-decoration: line-through;
-    color: $color-light-gray;
     font-family: "ff-dagny-web-pro",sans-serif;
     font-style: normal;
     font-weight: 400;
+    color: rgb(203,75,22);
   }
 
   .next-title {
-    color: #27AE60;
+    color: rgb(38,139,210);
     font-family: "ff-dagny-web-pro",sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 1.5em;
   }
 
   .reveal {

@@ -25,12 +25,14 @@
               <span class="next-title" ng-bind="story.nextTitle"></span>
             </p>
             <div class="controls" ng-class="{'reveal': ($index == 0) || shouldReveal}" ng-if="$index != stories.length - 1">
-              <p>What happens next?</p>
-              <a scroll-to="story-{{$index + 1}}" duration="2000"><i class="fa fa-chevron-circle-down fa-2x"></i></a>
+              <button class="continue btn btn-primary" scroll-to="story-{{$index + 1}}" duration="2000">
+                What happens next?
+                <i class="fa fa-chevron-circle-down"></i>
+              </button>
             </div>
             <div class="controls" ng-class="{'reveal': ($index == 0) || shouldReveal}" ng-if="$index == stories.length - 1">
               <p>What happens next?</p>
-              <a class="btn btn-success btn-lg" ng-href="mailto:mike@mrap.me">Say Hello</a>
+              <a class="btn btn-success" ng-href="mailto:mike@mrap.me">Say Hello</a>
               <div class="section" id="skills" ng-include src="'partials/skills.html'"></div>
             </div>
           </div>
