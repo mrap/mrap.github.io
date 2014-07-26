@@ -1,39 +1,137 @@
-<html lang="en" ng-app="mrap" >
+<html lang="en" ng-app="mrap">
 <head>
+  <title>MRAP</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>MRAP</title>
+
+  <link rel="stylesheet" href="/main.css">
 </head>
 <body ng-init="isMainPage = true">
-  <div ng-include src="'partials/navigation.html'"></div>
+  <!-- ngInclude: 'partials/navigation.html' -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+
+    <!-- Navigation Header -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand" href="/" scroll-to="top">MIKE RAPADAS</a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="navbar-collapse collapse" ng-if="isMainPage">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#" scroll-to="who-am-i">Who am I?</a></li>
+        <li><a href="#" scroll-to="skills">Skills</a></li>
+        <li><a href="#" scroll-to="portfolio">Personal Projects</a></li>
+        <li><a href="#" scroll-to="contact">Contact Me</a></li>
+        <li><a href="/story.html">My Story</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
   <div class="container">
-    <div id="top" ng-include src="'partials/header.html'"></div>
-    <div class="section" id="who-am-i" ng-include src="'partials/who-am-i.html'"></div>
-    <div class="section" id="skills" ng-include src="'partials/skills.html'"></div>
-    <div class="section" id="portfolio" ng-include src="'partials/quote.html'" ></div>
-    <div class="section" ng-include src="'partials/portfolio.html'"></div>
-    <div class="section" id="contact" ng-include src="'partials/contact.html'"></div>
+    <!-- ngInclude: 'partials/header.html' -->
+<div id="top" class="header-section" data-stellar-background-ratio="0.5">
+  <h1 class="tagline" data-fittext="1.5" data-fittext-max="75">building <span class="brand">beyond</span> myself</h1>
+  <a scroll-to="who-am-i"><i class="fa fa-angle-double-down fa-3x"></i></a>
+</div>
+    <!-- ngInclude: 'partials/who-am-i.html' -->
+<div id="who-am-i" class="section">
+  <div class="content">
+    <h2>A Daring Developer</h2>
+    <p class="subheader">Web | Mobile | Backend-APIs</p>
+
+    <p class="bio">Passionate about building amazing things with cool technology. Dangerously armed in a multitude of programming languages and frameworks. Strikes with <strong>fullstack</strong> code-ninja moves.  Intrigued by the mysterious unknown. Codes up web and mobile apps for fun. <br>Inspired by captivating projects and driven individuals.</p>
+  </div>
+</div>
+    <!-- ngInclude: 'partials/skills.html' -->
+<div id="skills" class="section">
+  <div class="row content">
+    <h2 ng-if="isMainPage">A Full Arsenal</h2>
+    <div class="col-md-6 col-xs-12">
+      <!-- ngInclude: 'partials/languages-list.html' -->
+<h4>Fluency</h4>
+<div class="skills-group languages" ng-controller="LanguagesCtrl">
+  <div class="skill" ng-repeat="language in languages">
+    <div class="row">
+      <span class="skill-name">{{language.name}}</span>
+    </div>
+    <div class="row">
+      <div class="skillbar-inactive">
+        <div class="skillbar-active" style="width: {{language.level}};"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="col-md-6 col-xs-12">
+      <!-- ngInclude: 'partials/skills-list.html' -->
+<h4>Skills</h4>
+<div class="skills-group skills" ng-controller="SkillsCtrl">
+  <div class="skill" ng-repeat="skill in skills">
+    <div class="row">
+      <span class="skill-name">{{skill.name}}</span>
+    </div>
+    <div class="row">
+      <div class="skillbar-inactive">
+        <div class="skillbar-active" style="width: {{skill.level}};"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    <!-- ngInclude: 'partials/portfolio.html' -->
+<div id="portfolio" class="section">
+  <div class="quote" stellar="" data-stellar-background-ratio="0.5">
+    <div class="content">
+      <p class="quote-text">“What you can’t imagine, you can’t discover.”</p>
+      <p class="quote-author">- Albert Einstein -
+    </p></div>
+  </div>
+  <div ng-controller="PortfolioCtrl">
+    <div ng-repeat="sample in workSamples">
+      <div class="work-sample">
+        <div class="work-info">
+          <h2 class="work-name">{{ sample.name }}</h2>
+          <p class="work-description">{{ sample.description }}</p>
+        </div>
+        <img ng-src="{{sample.photoUrl}}">
+        <a href="{{sample.link}}"></a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- ngInclude: 'partials/contact.html' -->
+<div id="contact" class="section">
+  <div class="contact">
+    <p class="prompt">Let's work together</p>
+    <a href="mailto:mike@mrap.me" class="hello-btn">
+      <i class="fa fa-envelope-o"></i>
+      Say Hello
+    </a>
+  </div>
+</div>
   </div>
 </body>
 </html>
+
 <!-- Typekit -->
 <script type="text/javascript" src="//use.typekit.net/glp7kfk.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<link rel="stylesheet" href="stylesheets/main.css">
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/jquery.stellar/jquery.stellar.min.js"></script>
-<script src="bower_components/flowtype/flowtype.js"></script>
+
+<!-- Font Awesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<!-- Bootstrap -->
-<script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js"></script>
-<script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/transition.js"></script>
-<script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-<!-- Angular -->
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/controllers.js"></script>
-<script src="js/directives.js"></script>
-<script src="bower_components/ng-FitText.js/ng-FitText.js"></script>
-<script src="js/angular-smooth-scroll/angular-smooth-scroll-1.6.0.min.js"></script>
+
+<script src="/main.js"></script>
+
 <flowtype></flowtype>

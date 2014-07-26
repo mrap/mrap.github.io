@@ -1,0 +1,20 @@
+<div id="portfolio" class="section">
+  <div class="quote" stellar data-stellar-background-ratio="0.5" >
+    <div class="content">
+      <p class="quote-text">“What you can’t imagine, you can’t discover.”</p>
+      <p class="quote-author">- Albert Einstein -</cite>
+    </div>
+  </div>
+  <div ng-controller="PortfolioCtrl">
+    <div ng-repeat="sample in workSamples">
+      <div class="work-sample">
+        <div class="work-info">
+          <h2 class="work-name">{{ sample.name }}</h2>
+          <p class="work-description">{{ sample.description }}</p>
+        </div>
+        <img ng-src="{{sample.photoUrl}}"></img>
+        <a href="{{sample.link}}"></a>
+      </div>
+    </div>
+  </div>
+</div>
