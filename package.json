@@ -17,7 +17,8 @@
     "grunt-ng-annotate": "^0.3.0",
     "grunt-nginclude": "^0.4.1",
     "grunt-usemin": "^2.3.0",
-    "load-grunt-tasks": "^0.6.0"
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^0.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
