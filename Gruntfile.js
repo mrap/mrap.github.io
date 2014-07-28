@@ -61,6 +61,16 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    watch: {
+      all: {
+        files: ['assets/**/*'],
+        tasks: ['buildDev'],
+        options: {
+          livereload: true
+        }
+      }
     }
 
   });
