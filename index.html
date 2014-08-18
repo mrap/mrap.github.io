@@ -54,10 +54,9 @@
     <!-- ngInclude: 'partials/skills.html' -->
 <div id="skills" class="section">
   <div class="row content">
-    <h2 ng-if="isMainPage">A Full Arsenal</h2>
     <div class="col-md-6 col-xs-12">
       <!-- ngInclude: 'partials/languages-list.html' -->
-<h4>Fluency</h4>
+<h3>Fluency</h3>
 <div class="skills-group languages" ng-controller="LanguagesCtrl">
   <div class="skill" ng-repeat="language in languages">
     <div class="row">
@@ -74,7 +73,7 @@
 
     <div class="col-md-6 col-xs-12">
       <!-- ngInclude: 'partials/skills-list.html' -->
-<h4>Skills</h4>
+<h3>Skills</h3>
 <div class="skills-group skills" ng-controller="SkillsCtrl">
   <div class="skill" ng-repeat="skill in skills">
     <div class="row">
@@ -115,7 +114,7 @@
 <div id="contact" class="section">
   <div class="contact">
     <p class="prompt">Let's work together</p>
-    <a href="mailto:mike@mrap.me" class="hello-btn">
+    <a href="mailto:mike@mrap.me" class="hello btn btn-primary btn-lg">
       <i class="fa fa-envelope-o"></i>
       Say Hello
     </a>
@@ -124,10 +123,6 @@
   </div>
 </body>
 </html>
-
-<!-- Typekit -->
-<script type="text/javascript" src="//use.typekit.net/glp7kfk.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!-- Font Awesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">

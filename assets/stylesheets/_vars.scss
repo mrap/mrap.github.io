@@ -1,0 +1,64 @@
+
+// Global vars
+$max-navigation-height: 25%;
+$min-navigation-height: 44px;
+$animation-duration: 0.5s;
+$text-color-white: #ECF0F1;
+$color-light-gray: #BDC3C7;
+$color-dark-blue: #34495E;
+$color-dark-grey: #7F8C8D;
+$bg-image: url(https://mrap-blog.s3.amazonaws.com/mrap_bg_50.jpg);
+$padding-left: 12%;
+
+// Bootstrap
+$text-color: $text-color-white;
+$btn-default-bg: rgb(0, 0, 0);
+$btn-default-bg: rgba(0, 0, 0, 0.5);
+$btn-primary-bg: rgb(48, 133, 99);
+$btn-primary-bg: rgba(48, 133, 99, 0.7);
+$navbar-default-bg: $text-color-white;
+// Forms
+$input-border-color: $color-dark-blue;
+$input-color-placeholder: $color-light-gray;
+$input-color: $text-color-white;
+$input-bg: rgb(255, 255, 255);
+$input-bg: rgba(255, 255, 255, 0.2);
+@import '../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap';
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
+@mixin big-header-font {
+  font-family: "Fugaz One", cursive;
+}
+
+@mixin light-font {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+@mixin medium-font {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include big-header-font;
+  color: #34495E;
+  line-height: 1.45;
+}
+
+p {
+  color: #34495E;
+  @include light-font;
+}
+
+h1 { font-size: 3em;}
+
+.brand {
+  @include big-header-font;
+}
+

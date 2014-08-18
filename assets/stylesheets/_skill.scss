@@ -11,9 +11,7 @@
 
   .skill-name {
     color: #7F8C8D;
-    font-family: "ff-tisa-sans-web-pro",sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    @include medium-font;
     font-size: 0.7em;
     text-transform: uppercase;
   }

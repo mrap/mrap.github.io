@@ -10,8 +10,6 @@
   }
 
   .navbar-brand {
-    font-family: "jaf-facitweb",sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    @include big-header-font;
   }
 }

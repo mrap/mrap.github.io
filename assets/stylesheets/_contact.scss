@@ -1,0 +1,21 @@
+@import 'vars';
+
+.contact {
+  text-align: center;
+  background-color: white;
+  padding: 10%;
+
+  img {
+    height: 200px;
+  }
+
+  .prompt {
+    color: $color-dark-grey;
+    font-size: 30px;
+  }
+
+  .hello.btn {
+    border-radius: 0;
+  }
+}
+

@@ -3,6 +3,13 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    sass: {
+      main: {
+        files: {
+          'assets/stylesheets/main.css': 'assets/stylesheets/main.scss'
+        }
+      }
+    },
 
     ngAnnotate: {
       options: {
@@ -81,21 +88,12 @@ module.exports = function(grunt) {
 
   grunt.registerTask('buildDev', [
     'prepareAngular',
+    'sass',
     'useminPrepare',
     'concat:generated',
     'cssmin:generated',
     'uglify:generated',
     'copy',
-    'usemin',
-    'nginclude'
-  ]);
-
-  grunt.registerTask('buildProd', [
-    'useminPrepare',
-    'concat:generated',
-    'cssmin:generated',
-    'uglify:generated',
-    'copy:index',
     'usemin',
     'nginclude'
   ]);
