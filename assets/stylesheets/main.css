@@ -9064,7 +9064,7 @@ h1 {
 .header-section {
   position: relative;
   height: 100%;
-  background-image: url(https://mrap-blog.s3.amazonaws.com/mrap_bg_50.jpg);
+  background-image: url(http://mrap-blog.s3.amazonaws.com/mrap_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
