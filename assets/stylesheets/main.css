@@ -1,12 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli:300|Titillium+Web:600);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Fugaz+One);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4525,7 +4525,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -9052,7 +9052,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -9069,23 +9069,25 @@ h1 {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  font-family: "Fugaz One", cursive; }
-  .header-section .tagline {
+  -o-background-size: cover; }
+  .header-section .content {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 40%;
-    color: #ECF0F1;
+    top: 40%; }
+    .header-section .content h1, .header-section .content h6 {
+      color: #ECF0F1;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300; }
+  .header-section .tagline {
     text-transform: uppercase; }
-  .header-section .fa {
+  .header-section a#intro {
+    cursor: pointer;
     width: 100%;
     position: absolute;
     text-align: center;
     bottom: 15%;
     color: #ECF0F1; }
-    .header-section .fa:hover {
-      color: #3498DB; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -13605,7 +13607,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -18142,7 +18144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -22686,7 +22688,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -27222,7 +27224,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -27238,8 +27240,8 @@ h1 {
     margin-bottom: 20px; }
   .skills-group .skill-name {
     color: #7F8C8D;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 0.7em;
     text-transform: uppercase; }
 
@@ -31778,7 +31780,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -36345,7 +36347,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {
@@ -40884,7 +40886,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #34495E;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 h1 {

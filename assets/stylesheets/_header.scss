@@ -9,27 +9,29 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  @include big-header-font;
 
-  .tagline {
+  .content {
     position: absolute;
     width: 100%;
     text-align: center;
     top: 40%;
-    color: $text-color-white;
+
+    h1, h6 {
+      color: $text-color-white;
+      @include light-font;
+    }
+  }
+
+  .tagline {
     text-transform: uppercase;
   }
 
-  // fort-awesome icon
-  .fa {
+  a#intro {
+    cursor: pointer;
     width: 100%;
     position: absolute;
     text-align: center;
     bottom: 15%;
     color: $text-color-white;
-
-    &:hover {
-      color: #3498DB;
-    }
   }
 }
