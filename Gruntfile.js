@@ -20,8 +20,8 @@ module.exports = function(grunt) {
     useminPrepare: {
       html: 'assets/index.html',
       options: {
-        root: 'assets',
-        dest: '../',
+        root: './',
+        dest: './',
       },
     },
 
@@ -66,13 +66,14 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['buildDev']);
-  grunt.registerTask('mainCSS', ['sass', 'autoprefixer', 'cssmin:main']);
+  grunt.registerTask('mainCSS', ['sass', 'autoprefixer']);
 
   grunt.registerTask('buildDev', [
     'useminPrepare',
     'mainCSS',
+    'concat:generated',
+    'cssmin:generated',
     // 'cssmin:generated',
-    // 'concat:generated',
     // 'uglify:generated',
     'copy:index',
     'usemin'
