@@ -1,7 +1,10 @@
+@import 'mixins';
+
 // Google Fonts
-// Collection: http://www.google.com/fonts#UsePlace:use/Collection:Allan:700|Open+Sans:300
-$headerFontFamily: 'Allan', Helvetica, sans-serif;
-$fontFamily: 'Open Sans', sans-serif;
+// Collection: http://www.google.com/fonts#UsePlace:use/Collection:Fugaz+One|Open+Sans:600italic,300
+$headerFont: 1.5rem 'Fugaz One', cursive;
+$deckTitleFont: italic 600 0.8rem 'Open Sans', Helvetica, sans-serif;
+$font: 1rem 'Open Sans', sans-serif;
 
 $mobileWidth: 480px;
 $tabletWidth: 768px;
@@ -14,7 +17,7 @@ $secondaryTextColor: #598591;
 $deckBgColor: #ECF0F1;
 
 html {
-  font-family: $fontFamily;
+  font: $font;
   font-size: 13px;
   color: $primaryTextColor;
 }
@@ -25,10 +28,23 @@ html, body {
 
 body {
   background-color: $bgColor;
+  @include retina-background-cover-image('assets/images/mrap-bg', 'jpg');
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden; // keep from scrolling to see the edges
+
+  // Overlayed stripes
+  &:before {
+    content: '';
+    position: fixed;
+    height: 120%;
+    width: 120%;
+    background: url(assets/images/dots.png) repeat;
+  }
 }
 
 .header {
-  font-family: $headerFontFamily;
+  font: $headerFont;
 }
 
 // Keeps deck to a max-width
@@ -50,7 +66,7 @@ body {
   height: 0;
   width: 50%;
   padding-bottom: 50%;
-  box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px black; // Use #777 for light bg
 
   @media only screen
   and (max-device-width: $mobileWidth),
@@ -59,6 +75,15 @@ body {
     width: 70%;
     padding-bottom: 70%;
   }
+}
+
+.deck-title {
+  position: absolute;
+  top: -31px;
+  font: $deckTitleFont;
+  color: white;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
 }
 
 .card {
