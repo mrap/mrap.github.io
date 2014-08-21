@@ -1,3 +1,7 @@
+// Google Fonts
+// Collection: http://www.google.com/fonts#UsePlace:use/Collection:Allan:700|Open+Sans:300
+$headerFontFamily: 'Allan', Helvetica, sans-serif;
+$fontFamily: 'Open Sans', sans-serif;
 
 $mobileWidth: 480px;
 $tabletWidth: 768px;
@@ -5,8 +9,15 @@ $tabletWidth: 768px;
 // Colors
 $bgColor: #BECDBB;
 $accentColor: #3B5087;
+$primaryTextColor: #2C3E50;
 $secondaryTextColor: #598591;
 $deckBgColor: #ECF0F1;
+
+html {
+  font-family: $fontFamily;
+  font-size: 13px;
+  color: $primaryTextColor;
+}
 
 html, body {
   height: 100%;
@@ -14,6 +25,10 @@ html, body {
 
 body {
   background-color: $bgColor;
+}
+
+.header {
+  font-family: $headerFontFamily;
 }
 
 // Keeps deck to a max-width
@@ -47,11 +62,23 @@ body {
 }
 
 .card {
+  display: table;
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: $deckBgColor;
   box-shadow: 0 1px 4px rgba(0,0,0,.3),0 0 40px rgba(128,128,128,.1)inset;
+}
+
+.card-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.title {
+  text-align: center;
 }
