@@ -1,0 +1,57 @@
+
+$mobileWidth: 480px;
+$tabletWidth: 768px;
+
+// Colors
+$bgColor: #BECDBB;
+$accentColor: #3B5087;
+$secondaryTextColor: #598591;
+$deckBgColor: #ECF0F1;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: $bgColor;
+}
+
+// Keeps deck to a max-width
+.deck-wrapper {
+  max-width: 560px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-deck {
+  background-color: $deckBgColor;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 0;
+  width: 50%;
+  padding-bottom: 50%;
+  box-shadow: 0 10px 6px -6px #777;
+
+  @media only screen
+  and (max-device-width: $mobileWidth),
+  (max-device-width: $tabletWidth)
+  and (orientation: portrait) {
+    width: 70%;
+    padding-bottom: 70%;
+  }
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $deckBgColor;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3),0 0 40px rgba(128,128,128,.1)inset;
+}
