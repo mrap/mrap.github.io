@@ -7,25 +7,38 @@ module.exports = function(grunt) {
       main: {
         files: {
           'main.css': 'assets/stylesheets/main.scss'
-        }
+        },
+      },
+    },
+
+    autoprefixer: {
+      main: {
+        src: 'main.css'
       }
     },
 
     useminPrepare: {
       html: 'assets/index.html',
       options: {
-        dest: './'
-      }
+        root: 'assets',
+        dest: '../',
+      },
     },
 
     copy: {
-      main: {
+      index: {
         src: 'assets/index.html',
         dest: 'index.html'
+      }
+    },
+
+    cssmin: {
+      options: {
+        report: 'gzip'
       },
-      story: {
-        src: 'assets/story.html',
-        dest: 'story.html'
+      main: {
+        dest: 'main.css',
+        src: 'main.css'
       }
     },
 
@@ -49,14 +62,15 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['buildDev']);
+  grunt.registerTask('mainCSS', ['sass', 'autoprefixer', 'cssmin:main']);
 
   grunt.registerTask('buildDev', [
-    'sass',
     'useminPrepare',
-    'concat:generated',
-    'cssmin:generated',
+    'mainCSS',
+    // 'cssmin:generated',
+    // 'concat:generated',
     // 'uglify:generated',
-    'copy',
-    'usemin',
+    'copy:index',
+    'usemin'
   ]);
 };
