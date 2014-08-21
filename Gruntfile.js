@@ -50,13 +50,17 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      all: {
+      options: {
+        livereload: true
+      },
+      gruntfile: {
+        files: ['Gruntfile.js'],
+        tasks: ['buildDev'],
+      },
+      assets: {
         files: ['assets/**/*'],
         tasks: ['buildDev'],
-        options: {
-          livereload: true
-        }
-      }
+      },
     }
 
   });
