@@ -14,10 +14,5 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.14",
-    "jquery.stellar": "~0.6.2",
-    "flowtype": "*",
-    "bootstrap-sass": "twbs/bootstrap-sass#~3.1.1",
-    "ng-FitText.js": "*"
   }
 }
