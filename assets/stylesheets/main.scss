@@ -22,6 +22,9 @@ $deckBgColor: #ECF0F1;
 html {
   font: $font;
   font-size: 15px;
+  @media only screen and (max-width: $mobileWidth) {
+    font-size: 13px;
+  }
   color: $primaryTextColor;
 }
 
