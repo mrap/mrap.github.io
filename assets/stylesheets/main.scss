@@ -1,5 +1,6 @@
 @import 'mixins';
 @import '../bower_components/beemuse-paper/src/paper';
+@import 'mrap-icons';
 
 // Google Fonts
 // Collection: http://www.google.com/fonts#UsePlace:use/Collection:Fugaz+One|Open+Sans:600italic,300
@@ -15,11 +16,12 @@ $bgColor: #BECDBB;
 $accentColor: #3B5087;
 $primaryTextColor: #2C3E50;
 $secondaryTextColor: #598591;
+$linkColor: rgba(15, 111, 162, 0.8);
 $deckBgColor: #ECF0F1;
 
 html {
   font: $font;
-  font-size: 13px;
+  font-size: 15px;
   color: $primaryTextColor;
 }
 
@@ -44,8 +46,8 @@ body {
   }
 }
 
-.header {
-  font: $headerFont;
+a {
+  color: $linkColor;
 }
 
 // Keeps deck to a max-width
@@ -76,8 +78,8 @@ body {
 }
 
 .deck-title {
-  position: absolute;
-  top: -31px;
+  position: relative;
+  top: -40px;
   font: $deckTitleFont;
   color: white;
   color: rgba(255,255,255,0.8);
@@ -103,6 +105,34 @@ body {
   background: url(assets/images/paper.png) repeat;
 }
 
-.title {
+.header {
   text-align: center;
+}
+
+.title {
+  font: $font;
+  font-size: 1.5rem;
+}
+
+.links {
+  display: table;
+  margin: auto;
+  padding: 1rem 0;
+
+  .link {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0 0.5rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
