@@ -69,12 +69,9 @@ body {
   padding-bottom: 50%;
   box-shadow: 0 10px 6px -6px black; // Use #777 for light bg
 
-  @media only screen
-  and (max-device-width: $mobileWidth),
-  (max-device-width: $tabletWidth)
-  and (orientation: portrait) {
-    width: 70%;
-    padding-bottom: 70%;
+  @media only screen and (max-width: $mobileWidth) {
+    width: 80%;
+    padding-bottom: 80%;
   }
 }
 
