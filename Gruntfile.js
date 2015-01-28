@@ -61,7 +61,18 @@ module.exports = function(grunt) {
         files: ['assets/**/*'],
         tasks: ['buildDev'],
       },
-    }
+    },
+
+    img: {
+      images: {
+        src: 'assets/images',
+        dest: 'public/images',
+      },
+    },
+
+    clean: {
+      bak: ['public/images/*.bak'],
+    },
 
   });
 
@@ -76,6 +87,8 @@ module.exports = function(grunt) {
     // 'cssmin:generated',
     // 'uglify:generated',
     'copy:index',
-    'usemin'
+    'usemin',
+    'img',
+    'clean',
   ]);
 };

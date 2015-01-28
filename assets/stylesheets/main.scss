@@ -100,6 +100,15 @@ body > * {
   }
 }
 
+.personal-avatar {
+  background: url('public/images/me@2x.png');
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
 .hero {
   position: absolute;
   top: 40%;
