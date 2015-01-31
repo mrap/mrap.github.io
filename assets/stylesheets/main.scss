@@ -1,3 +1,15 @@
+// Materialize
+@import '../bower_components/materialize/sass/components/prefixer';
+@import '../bower_components/materialize/sass/components/mixins';
+@import '../bower_components/materialize/sass/components/color';
+@import '../bower_components/materialize/sass/components/variables';
+// Reset
+@import '../bower_components/materialize/sass/components/normalize';
+@import '../bower_components/materialize/sass/components/global';
+@import '../bower_components/materialize/sass/components/roboto';
+@import '../bower_components/materialize/sass/components/typography';
+@import '../bower_components/materialize/sass/components/icons-material-design';
+@import '../bower_components/materialize/sass/components/buttons';
 
 /*------------------------*\
   #VARS
@@ -6,13 +18,6 @@
 $mobileWidth: 480px;
 $tabletWidth: 768px;
 $maxContentWidth: 90%;
-
-// Google Fonts
-// http://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro:200italic|Oswald|Open+Sans:300,600
-$font: 300 medium 'Open Sans', Helvetica , sans-serif;
-$linkFont: 600 medium 'Open Sans', Helvetica , sans-serif;
-$headerFont: 400 medium 'Oswald', Helvetica, sans-serif;
-$thinFont: italic 200 medium 'Source Sans Pro', Helvetica, sans-serif;
 
 // Colors
 $textColor: #1F282D;
@@ -31,27 +36,20 @@ $bgColor: #ECF0F1;
 
 body {
   font-size: 15px;
-  font: $font;
   width: 100%;
   height: 100%;
   margin: 0;
-}
-
-body {
   background-color: $bgColor;
   color: $textColor;
+  padding: 1rem;
+
+  @media all and (min-width: $mobileWidth + 1) {
+    padding: 5rem;
+  }
 }
 
 * {
   box-sizing: border-box;
-}
-
-a {
-  color: $linkColor;
-  font: $linkFont;
-  font-size: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 img.svg {
@@ -64,21 +62,15 @@ img.svg {
 }
 
 .section-content {
-  position: absolute;
-  left: 0; top: 0; right: 0; bottom: 0;
-  margin: auto;
   width: 100%;
   max-width: $maxContentWidth;
 }
 
 .section#intro {
-  height: 80vh;
+  padding-top: 50px;
 }
 
 .main-header {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 100%;
 
   .big-title {
@@ -87,6 +79,8 @@ img.svg {
   }
 
   .main-description {
+    font-weight: 300;
+
     @media all and (min-width: $mobileWidth + 1) {
       font-size: 2rem;
     }
@@ -143,74 +137,9 @@ img.svg {
   }
 }
 
-
-.motto {
-  text-align: center;
-  font: italic 900 medium 'Lato', sans-serif;
-  font-size: 3em;
-}
-
-/*------------------------*\
-  #NAVIGATION
-\*------------------------*/
-
-.nav {
-  z-index: 1000;
-  position: fixed;
-  display: table;
-  width: 100%;
-  padding: 5px 5%;
-  height: 80px;
-
-  & > div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .nav-actions {
-    text-align: right;
-
-    a {
-      padding-top: 10px;
-      margin-left: 10px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-.personal-avatar {
-  background: url('public/images/me@2x.png');
-  background-size: contain;
-  height: 100px;
-  width: 100px;
-  background-repeat: no-repeat;
-  margin: auto;
-}
-
-.hero {
-  position: absolute;
-  top: 40%;
-}
-
-.description {
-  font: $thinFont;
-  color: $secondaryTextColor;
-  margin-top: 0.3em;
-}
-
-.links {
-  font-size: 0.8rem;
-  margin-top: 20px;
-
-  a {
-    padding-top: 10px;
-    margin-left: 10px;
-
-    &:first-child {
-      margin-left: 0;
-    }
+@media all and (min-width: $mobileWidth + 1) {
+  a#contact {
+    height: 54px;
+    line-height: 56px;
   }
 }

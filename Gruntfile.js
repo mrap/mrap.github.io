@@ -35,6 +35,11 @@ module.exports = function(grunt) {
           {expand: true, cwd: 'assets/icons/', src: ['**'], dest: 'public/icons/'},
         ],
       },
+      materialize: {
+        files: [
+          {expand: true, cwd: 'assets/bower_components/materialize/font/', src: ['**'], dest: 'font/'},
+        ],
+      }
     },
 
     cssmin: {
@@ -94,6 +99,7 @@ module.exports = function(grunt) {
     'usemin',
     'img',
     'copy:icons',
+    'copy:materialize',
     'clean',
   ]);
 };
