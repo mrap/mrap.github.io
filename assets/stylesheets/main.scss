@@ -61,7 +61,6 @@ img.svg {
 .section {
   position: relative;
   width: 100%;
-  height: 100vh;
 }
 
 .section-content {
@@ -81,7 +80,11 @@ img.svg {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
-  text-align: center;
+
+  .big-title {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
 
   .main-description {
     @media all and (min-width: $mobileWidth + 1) {
@@ -91,57 +94,55 @@ img.svg {
   }
 }
 
-.platform-icons {
-  display: table;
-  width: 100%;
-  max-width: 70%;
+.key-text {
+  font-weight: 700;
+}
+
+.platform-icons .icon:first-child {
+  margin: 0 -25px;
 
   @media all and (max-width: $mobileWidth) {
-    max-width: 90%;
+    margin: 0 -12px;
   }
+}
 
-  margin: auto;
-  left: 0;
-  right: 0;
+.icon {
+  display: inline;
+  width: 80px;
 
-  .icon {
-    display: table-cell;
+  .svg {
     width: 80px;
 
+    @media all and (max-width: $mobileWidth) {
+      width: 40px;
+    }
+
+    height: 80px;
+    fill: #D4D7D8;
+    fill: rgba(0, 0, 0, 0.1);
+  }
+
+  .svg.shorten {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: $mobileWidth) {
+  .icon {
+    width: 40px;
+
     .svg {
-      width: 80px;
-
-      @media all and (max-width: $mobileWidth) {
-        width: 40px;
-      }
-
-      height: 80px;
-      fill: #D4D7D8;
-      fill: rgba(0, 0, 0, 0.1);
+      height: 40px;
     }
 
     .svg.shorten {
-      height: 60px;
-      margin-bottom: 10px;
+      height: 30px;
+      margin-bottom: 5px;
     }
   }
-
-  @media all and (max-width: $mobileWidth) {
-    .icon {
-      width: 40px;
-
-      .svg {
-        height: 40px;
-      }
-
-      .svg.shorten {
-        height: 30px;
-        margin-bottom: 5px;
-      }
-    }
-  }
-
 }
+
 
 .motto {
   text-align: center;
@@ -157,10 +158,9 @@ img.svg {
   z-index: 1000;
   position: fixed;
   display: table;
-  bottom: 0;
   width: 100%;
   padding: 5px 5%;
-  font-size: 0.8rem;
+  height: 80px;
 
   & > div {
     display: table-cell;
