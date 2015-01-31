@@ -54,6 +54,10 @@ a {
   text-transform: uppercase;
 }
 
+img.svg {
+  visibility: hidden;
+}
+
 .section {
   position: relative;
   width: 100%;
@@ -90,7 +94,12 @@ a {
 .platform-icons {
   display: table;
   width: 100%;
-  max-width: 90%;
+  max-width: 70%;
+
+  @media all and (max-width: $mobileWidth) {
+    max-width: 90%;
+  }
+
   margin: auto;
   left: 0;
   right: 0;
