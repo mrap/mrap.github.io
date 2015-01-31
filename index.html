@@ -10,39 +10,38 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic|Oswald|Open+Sans:300,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/main.css">
+
+    <script src="/main.js"></script>
   </head>
   <body>
 
     <!-- Navigation -->
-    <nav class="nav">
-      <div class="nav-header">
-        Mike Rapadas
-      </div>
-    </nav><!-- End Navigation -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="http://mrap.me" class="brand-logo">Mike Rapadas</a>
+            <ul id="nav-mobile" class="right side-nav">
+              <li><a href="https://github.com/mrap" target="_blank">Github</a></li>
+            </ul>
+            <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+          </div>
+        </div>
+      </nav><!-- End Navigation -->
+    </div>
 
-    <!-- Intro Section -->
-    <section id="intro" class="section">
-      <div class="section-content">
-        <div class="main-header">
+    <!-- Main Container -->
+    <div class="main-container container">
+
+      <!-- Intro Section -->
+      <section id="intro" class="section">
+        <div class="section-content">
           <div class="main-description">
             I'm a fullstack web and iOS engineer</br>fueled by captivating projects and driven individuals.
           </div>
-          <div class="platform-icons">
-            <div class="icon">
-              <img class="svg shorten" src="public/icons/iphone-icon.svg" alt="iPhone icon" />
-            </div>
-            <div class="icon">
-              <img class="svg shorten" src="public/icons/ipad-icon.svg" alt="iPad icon" />
-            </div>
-            <div class="icon">
-              <img class="svg" src="public/icons/macbook-icon.svg" alt="Apple MacBook icon" />
-            </div>
-            <div class="icon">
-              <img class="svg shorten" src="public/icons/browser-icon.svg" alt="Web browser icon" />
-            </div>
-          </div>
         </div>
-      </div>
-    </section><!-- End Intro Section -->
+      </section><!-- End Intro Section -->
+
+    </div><!-- End Main Container -->
   </body>
 </html>

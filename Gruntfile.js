@@ -35,6 +35,11 @@ module.exports = function(grunt) {
           {expand: true, cwd: 'assets/icons/', src: ['**'], dest: 'public/icons/'},
         ],
       },
+      materialize: {
+        files: [
+          {expand: true, cwd: 'assets/bower_components/materialize/font/', src: ['**'], dest: 'font/'},
+        ],
+      },
     },
 
     cssmin: {
@@ -89,12 +94,12 @@ module.exports = function(grunt) {
     'mainCSS',
     'concat:generated',
     'cssmin:generated',
-    // 'cssmin:generated',
-    // 'uglify:generated',
+   'uglify:generated',
     'copy:index',
     'usemin',
     'img',
     'copy:icons',
+    'copy:materialize',
     'clean',
   ]);
 };

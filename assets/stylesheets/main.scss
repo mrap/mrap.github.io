@@ -1,3 +1,4 @@
+@import '../bower_components/materialize/sass/materialize';
 
 /*------------------------*\
   #VARS
@@ -7,13 +8,6 @@ $mobileWidth: 480px;
 $tabletWidth: 768px;
 $maxContentWidth: 90%;
 
-// Google Fonts
-// http://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro:200italic|Oswald|Open+Sans:300,600
-$font: 300 medium 'Open Sans', Helvetica , sans-serif;
-$linkFont: 600 medium 'Open Sans', Helvetica , sans-serif;
-$headerFont: 400 medium 'Oswald', Helvetica, sans-serif;
-$thinFont: italic 200 medium 'Source Sans Pro', Helvetica, sans-serif;
-
 // Colors
 $textColor: #1F282D;
 $secondaryTextColor: #1F282D;
@@ -21,6 +15,8 @@ $linkColor: #77BED2;
 $accentColor: #D3D7D7;
 $bgColor: #ECF0F1;
 
+// Semantic
+$navHeight: 64px;
 
 
 
@@ -30,170 +26,20 @@ $bgColor: #ECF0F1;
 \*------------------------*/
 
 body {
-  font-size: 15px;
-  font: $font;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-body {
   background-color: $bgColor;
   color: $textColor;
 }
 
-* {
-  box-sizing: border-box;
+.main-container {
+  margin-top: $navHeight / 2;
 }
 
-a {
-  color: $linkColor;
-  font: $linkFont;
-  font-size: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.section-content {
-  position: absolute;
-  left: 0; top: 0; right: 0; bottom: 0;
-  margin: auto;
-  width: 100%;
-  max-width: $maxContentWidth;
-}
-
-.section#intro {
-  height: 80vh;
-}
-
-.main-header {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+.main-description {
   text-align: center;
 
-  .main-description {
-    @media all and (min-width: $mobileWidth + 1) {
-      font-size: 2rem;
-    }
-    margin-bottom: 30px;
-  }
-}
-
-.platform-icons {
-  display: table;
-  width: 100%;
-  max-width: 90%;
-  margin: auto;
-  left: 0;
-  right: 0;
-
-  .icon {
-    display: table-cell;
-    width: 80px;
-
-    .svg {
-      height: 80px;
-    }
-
-    .svg.shorten {
-      height: 60px;
-      margin-bottom: 10px;
-    }
+  @media all and (min-width: $mobileWidth + 1) {
+    font-size: 2rem;
   }
 
-  @media all and (max-width: $mobileWidth) {
-    .icon {
-      width: 40px;
-
-      .svg {
-        height: 40px;
-      }
-
-      .svg.shorten {
-        height: 30px;
-        margin-bottom: 5px;
-      }
-    }
-  }
-
-}
-
-.motto {
-  text-align: center;
-  font: italic 900 medium 'Lato', sans-serif;
-  font-size: 3em;
-}
-
-/*------------------------*\
-  #NAVIGATION
-\*------------------------*/
-
-.nav {
-  z-index: 1000;
-  position: fixed;
-  display: table;
-  bottom: 0;
-  width: 100%;
-  padding: 5px 5%;
-  font-size: 0.8rem;
-
-  & > div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .nav-actions {
-    text-align: right;
-
-    a {
-      padding-top: 10px;
-      margin-left: 10px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-.personal-avatar {
-  background: url('public/images/me@2x.png');
-  background-size: contain;
-  height: 100px;
-  width: 100px;
-  background-repeat: no-repeat;
-  margin: auto;
-}
-
-.hero {
-  position: absolute;
-  top: 40%;
-}
-
-.description {
-  font: $thinFont;
-  color: $secondaryTextColor;
-  margin-top: 0.3em;
-}
-
-.links {
-  font-size: 0.8rem;
-  margin-top: 20px;
-
-  a {
-    padding-top: 10px;
-    margin-left: 10px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
+  margin-bottom: 30px;
 }
