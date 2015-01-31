@@ -40,6 +40,11 @@ module.exports = function(grunt) {
           {expand: true, cwd: 'assets/bower_components/materialize/font/', src: ['**'], dest: 'font/'},
         ],
       },
+      fontawesome: {
+        files: [
+          {expand: true, cwd: 'assets/bower_components/font-awesome/fonts/', src: ['**'], dest: 'font/font-awesome/'},
+        ],
+      },
     },
 
     cssmin: {
@@ -100,6 +105,7 @@ module.exports = function(grunt) {
     'img',
     'copy:icons',
     'copy:materialize',
+    'copy:fontawesome',
     'clean',
   ]);
 };
