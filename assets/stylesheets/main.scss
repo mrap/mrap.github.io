@@ -20,6 +20,7 @@ $bgColor: #ECF0F1;
 
 // Semantic
 $navHeight: 64px;
+$navMobileWidth: 992px;
 
 
 
@@ -35,6 +36,13 @@ body {
 
 .main-container {
   margin-top: $navHeight / 2;
+}
+
+nav .nav-wrapper li i {
+  // Nav link icons don't render properly in mobile sidebar
+  @media all and (max-width: $navMobileWidth) {
+    display: none;
+  }
 }
 
 .main-description {
