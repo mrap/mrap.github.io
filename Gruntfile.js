@@ -29,7 +29,12 @@ module.exports = function(grunt) {
       index: {
         src: 'assets/index.html',
         dest: 'index.html'
-      }
+      },
+      icons: {
+        files: [
+          {expand: true, cwd: 'assets/icons/', src: ['**'], dest: 'public/icons/'},
+        ],
+      },
     },
 
     cssmin: {
@@ -89,6 +94,7 @@ module.exports = function(grunt) {
     'copy:index',
     'usemin',
     'img',
+    'copy:icons',
     'clean',
   ]);
 };
