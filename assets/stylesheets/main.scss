@@ -6,6 +6,7 @@
 // Reset
 @import '../bower_components/materialize/sass/components/normalize';
 @import '../bower_components/materialize/sass/components/global';
+@import '../bower_components/materialize/sass/components/grid';
 @import '../bower_components/materialize/sass/components/roboto';
 @import '../bower_components/materialize/sass/components/typography';
 @import '../bower_components/materialize/sass/components/icons-material-design';
@@ -41,11 +42,6 @@ body {
   margin: 0;
   background-color: $bgColor;
   color: $textColor;
-  padding: 1rem;
-
-  @media all and (min-width: $mobileWidth + 1) {
-    padding: 5rem;
-  }
 }
 
 * {
