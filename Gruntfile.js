@@ -73,7 +73,6 @@ module.exports = function(grunt) {
     'mainCSS',
     'concat:generated',
     'cssmin:generated',
-    // 'cssmin:generated',
     // 'uglify:generated',
     'copy:index',
     'usemin'
