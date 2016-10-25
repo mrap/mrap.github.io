@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     sass: {
       main: {
         files: {
-          'main.css': 'assets/stylesheets/main.scss'
+          'main.css': 'src/stylesheets/main.scss'
         },
       },
     },
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     },
 
     useminPrepare: {
-      html: 'assets/index.html',
+      html: 'src/index.html',
       options: {
         root: './',
         dest: './',
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 
     copy: {
       index: {
-        src: 'assets/index.html',
+        src: 'src/index.html',
         dest: 'index.html'
       }
     },
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
     usemin: {
       html: 'index.html',
       options: {
-        assetsDirs: ['assets']
+        assetsDirs: ['src']
       }
     },
 
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         tasks: ['buildDev'],
       },
       assets: {
-        files: ['assets/**/*'],
+        files: ['src/**/*'],
         tasks: ['buildDev'],
       },
     }
